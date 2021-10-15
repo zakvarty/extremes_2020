@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>7 Extremes in Finance | Lancaster University MATH562/482/582</title>
+  <meta name="description" content="7 Extremes in Finance | Lancaster University MATH562/482/582" />
+  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="7 Extremes in Finance | Lancaster University MATH562/482/582" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="7 Extremes in Finance | Lancaster University MATH562/482/582" />
+  
+  
+  
+
+<meta name="author" content="Lecturers: Clement Lee &amp; Zak Varty" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="inference-dependent.html"/>
+<link rel="next" href="further.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#role-of-extreme-value-theory"><i class="fa fa-check"></i><b>1.1</b> Role of Extreme Value Theory</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="intro.html"><a href="intro.html#inadequacies-of-standard-statistical-approaches"><i class="fa fa-check"></i><b>1.1.1</b> Inadequacies of standard statistical approaches</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#sect:applications"><i class="fa fa-check"></i><b>1.2</b> Application areas of extreme value theory</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="intro.html"><a href="intro.html#oxford-and-worthing-annual-maxima-temperatures"><i class="fa fa-check"></i><b>1.2.1</b> Oxford and Worthing annual maxima temperatures</a></li>
+<li class="chapter" data-level="1.2.2" data-path="intro.html"><a href="intro.html#oceanographic-variables"><i class="fa fa-check"></i><b>1.2.2</b> Oceanographic variables</a></li>
+<li class="chapter" data-level="1.2.3" data-path="intro.html"><a href="intro.html#section:FTSEintro"><i class="fa fa-check"></i><b>1.2.3</b> FTSE Index</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#whats-in-the-course-for-you"><i class="fa fa-check"></i><b>1.3</b> What’s in the course for you?</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="block-maxima.html"><a href="block-maxima.html"><i class="fa fa-check"></i><b>2</b> Classical Theory of Maxima of IID Variables</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="block-maxima.html"><a href="block-maxima.html#block-maxima-1"><i class="fa fa-check"></i><b>2.1</b> Block Maxima</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="block-maxima.html"><a href="block-maxima.html#sect:maxima"><i class="fa fa-check"></i><b>2.1.1</b> Distributional Theory for <span class="math inline">\(M_n\)</span></a></li>
+<li class="chapter" data-level="2.1.2" data-path="block-maxima.html"><a href="block-maxima.html#illustrative-example-the-maximum-of-exponential-variables"><i class="fa fa-check"></i><b>2.1.2</b> Illustrative example: the maximum of Exponential variables</a></li>
+<li class="chapter" data-level="2.1.3" data-path="block-maxima.html"><a href="block-maxima.html#extremal-types-theorem-ett"><i class="fa fa-check"></i><b>2.1.3</b> Extremal Types Theorem (ETT)</a></li>
+<li class="chapter" data-level="2.1.4" data-path="block-maxima.html"><a href="block-maxima.html#the-generalised-extreme-value-gev-distribution"><i class="fa fa-check"></i><b>2.1.4</b> The Generalised Extreme Value (GEV) Distribution</a></li>
+<li class="chapter" data-level="2.1.5" data-path="block-maxima.html"><a href="block-maxima.html#uett"><i class="fa fa-check"></i><b>2.1.5</b> Unified Extremal Types Theorem (UETT)</a></li>
+<li class="chapter" data-level="2.1.6" data-path="block-maxima.html"><a href="block-maxima.html#moments-of-the-gev"><i class="fa fa-check"></i><b>2.1.6</b> Moments of the GEV</a></li>
+<li class="chapter" data-level="2.1.7" data-path="block-maxima.html"><a href="block-maxima.html#connections-between-clt-and-uett"><i class="fa fa-check"></i><b>2.1.7</b> Connections between CLT and UETT</a></li>
+<li class="chapter" data-level="2.1.8" data-path="block-maxima.html"><a href="block-maxima.html#pseudo-proofs"><i class="fa fa-check"></i><b>2.1.8</b> Pseudo Proofs</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="block-maxima.html"><a href="block-maxima.html#sect:domains-of-attraction"><i class="fa fa-check"></i><b>2.2</b> Domains of attraction</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="block-maxima.html"><a href="block-maxima.html#doa"><i class="fa fa-check"></i><b>2.2.1</b> Domains of attraction for random variables with absolutely continuous distributions</a></li>
+<li class="chapter" data-level="2.2.2" data-path="block-maxima.html"><a href="block-maxima.html#examples-of-domains-of-attractions"><i class="fa fa-check"></i><b>2.2.2</b> Examples of domains of attractions</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="block-maxima.html"><a href="block-maxima.html#inference"><i class="fa fa-check"></i><b>2.3</b> Inference for maxima of IID variables</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="block-maxima.html"><a href="block-maxima.html#sect:mle-gev"><i class="fa fa-check"></i><b>2.3.1</b> Inference for the GEV distribution</a></li>
+<li class="chapter" data-level="2.3.2" data-path="block-maxima.html"><a href="block-maxima.html#sect:mle-gev-max-temperature"><i class="fa fa-check"></i><b>2.3.2</b> Example: fitting the GEV to temperature maxima</a></li>
+<li class="chapter" data-level="2.3.3" data-path="block-maxima.html"><a href="block-maxima.html#return-levels"><i class="fa fa-check"></i><b>2.3.3</b> Return levels and return periods</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="alternative.html"><a href="alternative.html"><i class="fa fa-check"></i><b>3</b> Alternative Characterisation and Improved Inferences</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="alternative.html"><a href="alternative.html#point-process-characterisation"><i class="fa fa-check"></i><b>3.1</b> Point process characterisation</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="alternative.html"><a href="alternative.html#aside-on-poisson-processes"><i class="fa fa-check"></i><b>3.1.1</b> Aside on Poisson processes</a></li>
+<li class="chapter" data-level="3.1.2" data-path="alternative.html"><a href="alternative.html#the-limiting-point-process"><i class="fa fa-check"></i><b>3.1.2</b> The limiting point process</a></li>
+<li class="chapter" data-level="3.1.3" data-path="alternative.html"><a href="alternative.html#proof-of-point-process-limit"><i class="fa fa-check"></i><b>3.1.3</b> Proof of point process limit</a></li>
+<li class="chapter" data-level="3.1.4" data-path="alternative.html"><a href="alternative.html#sect:poisson-process-limit"><i class="fa fa-check"></i><b>3.1.4</b> The value of the Poisson process limit</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="alternative.html"><a href="alternative.html#sect:threshold-exceedances"><i class="fa fa-check"></i><b>3.2</b> Threshold exceedances</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="alternative.html"><a href="alternative.html#practical-implications-of-limit"><i class="fa fa-check"></i><b>3.2.1</b> Practical implications of limit</a></li>
+<li class="chapter" data-level="3.2.2" data-path="alternative.html"><a href="alternative.html#sect:GPDproperties"><i class="fa fa-check"></i><b>3.2.2</b> Properties of GPD</a></li>
+<li class="chapter" data-level="3.2.3" data-path="alternative.html"><a href="alternative.html#inference-for-the-generalised-pareto-distribution"><i class="fa fa-check"></i><b>3.2.3</b> Inference for the generalised Pareto distribution</a></li>
+<li class="chapter" data-level="3.2.4" data-path="alternative.html"><a href="alternative.html#example-fitting-the-gpd-to-newlyn-data"><i class="fa fa-check"></i><b>3.2.4</b> Example: fitting the GPD to Newlyn data</a></li>
+<li class="chapter" data-level="3.2.5" data-path="alternative.html"><a href="alternative.html#sect:PIT"><i class="fa fa-check"></i><b>3.2.5</b> Q-Q plot &amp; probability integral transform</a></li>
+<li class="chapter" data-level="3.2.6" data-path="alternative.html"><a href="alternative.html#sect:return-level-gpd"><i class="fa fa-check"></i><b>3.2.6</b> Return levels &amp; return periods</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="alternative.html"><a href="alternative.html#sect:r-largest"><i class="fa fa-check"></i><b>3.3</b> The <em>r</em>-largest approach</a></li>
+<li class="chapter" data-level="3.4" data-path="alternative.html"><a href="alternative.html#gpd-further-reading"><i class="fa fa-check"></i><b>3.4</b> Further reading</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="non-iid.html"><a href="non-iid.html"><i class="fa fa-check"></i><b>4</b> Extremes of Non-identically Distributed Variables</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="non-iid.html"><a href="non-iid.html#sect:nonstationaryMeanVar"><i class="fa fa-check"></i><b>4.1</b> Examples of non-identically distributed processes</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="non-iid.html"><a href="non-iid.html#reading-ozone-data"><i class="fa fa-check"></i><b>4.1.1</b> Reading ozone data</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="non-iid.html"><a href="non-iid.html#sect:existing"><i class="fa fa-check"></i><b>4.2</b> Existing methods for non-identically distributed processes</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="non-iid.html"><a href="non-iid.html#models-for-block-maxima-and-r-largest"><i class="fa fa-check"></i><b>4.2.1</b> Models for block maxima and <span class="math inline">\(r\)</span>-largest</a></li>
+<li class="chapter" data-level="4.2.2" data-path="non-iid.html"><a href="non-iid.html#models-for-threshold-exceedances"><i class="fa fa-check"></i><b>4.2.2</b> Models for threshold exceedances</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="non-iid.html"><a href="non-iid.html#sect:preprocessing"><i class="fa fa-check"></i><b>4.3</b> Pre-processing method</a></li>
+<li class="chapter" data-level="4.4" data-path="non-iid.html"><a href="non-iid.html#sect:reading-ozone"><i class="fa fa-check"></i><b>4.4</b> Analysis of Reading ozone data</a></li>
+<li class="chapter" data-level="4.5" data-path="non-iid.html"><a href="non-iid.html#non-iid-further-reading"><i class="fa fa-check"></i><b>4.5</b> Further reading</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="stationary.html"><a href="stationary.html"><i class="fa fa-check"></i><b>5</b> Extremes of Stationary Processes</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="stationary.html"><a href="stationary.html#background"><i class="fa fa-check"></i><b>5.1</b> Background</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="stationary.html"><a href="stationary.html#long-range-asymptotic-independence-condition"><i class="fa fa-check"></i><b>5.1.1</b> Long-range asymptotic independence condition</a></li>
+<li class="chapter" data-level="5.1.2" data-path="stationary.html"><a href="stationary.html#asymptotic-independence-of-maxima-aim"><i class="fa fa-check"></i><b>5.1.2</b> Asymptotic independence of Maxima (AIM)</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="stationary.html"><a href="stationary.html#unified-extremal-types-theorem-for-stationary-sequences"><i class="fa fa-check"></i><b>5.2</b> Unified Extremal Types Theorem for stationary sequences</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="stationary.html"><a href="stationary.html#extremes-of-fréchet-marginal-variables"><i class="fa fa-check"></i><b>5.2.1</b> Extremes of Fréchet marginal variables</a></li>
+<li class="chapter" data-level="5.2.2" data-path="stationary.html"><a href="stationary.html#motivating-example-moving-maxima"><i class="fa fa-check"></i><b>5.2.2</b> Motivating Example: Moving Maxima</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="stationary.html"><a href="stationary.html#extremal-index"><i class="fa fa-check"></i><b>5.3</b> The Extremal Index</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="stationary.html"><a href="stationary.html#extremal-index-for-moving-maxima-example"><i class="fa fa-check"></i><b>5.3.1</b> Extremal index for Moving Maxima example</a></li>
+<li class="chapter" data-level="5.3.2" data-path="stationary.html"><a href="stationary.html#sect:shortRangeImplications"><i class="fa fa-check"></i><b>5.3.2</b> Implications of short-range extremal dependence</a></li>
+<li class="chapter" data-level="5.3.3" data-path="stationary.html"><a href="stationary.html#distribution-of-the-maximum"><i class="fa fa-check"></i><b>5.3.3</b> Distribution of the Maximum</a></li>
+<li class="chapter" data-level="5.3.4" data-path="stationary.html"><a href="stationary.html#threshold-exceedances"><i class="fa fa-check"></i><b>5.3.4</b> Threshold exceedances</a></li>
+<li class="chapter" data-level="5.3.5" data-path="stationary.html"><a href="stationary.html#cluster-maxima-point-process-intensity"><i class="fa fa-check"></i><b>5.3.5</b> Cluster maxima point process intensity</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="inference-dependent.html"><a href="inference-dependent.html"><i class="fa fa-check"></i><b>6</b> Statistical Inference for Extremes of Stationary Processes</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="inference-dependent.html"><a href="inference-dependent.html#identifying-independent-clusters"><i class="fa fa-check"></i><b>6.1</b> Identifying independent clusters</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="inference-dependent.html"><a href="inference-dependent.html#sect:declustering"><i class="fa fa-check"></i><b>6.1.1</b> The runs method: declustering</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="inference-dependent.html"><a href="inference-dependent.html#sect:modelClusterMaxima"><i class="fa fa-check"></i><b>6.2</b> Modelling cluster maxima and all exceedances</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="inference-dependent.html"><a href="inference-dependent.html#point-process-intensity-estimation"><i class="fa fa-check"></i><b>6.2.1</b> Point process intensity estimation</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="finance.html"><a href="finance.html"><i class="fa fa-check"></i><b>7</b> Extremes in Finance</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="finance.html"><a href="finance.html#the-hill-estimator-for-heavy-tailed-data"><i class="fa fa-check"></i><b>7.1</b> The Hill estimator for heavy-tailed data</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="finance.html"><a href="finance.html#the-hill-estimator-of-alpha"><i class="fa fa-check"></i><b>7.1.1</b> The Hill estimator of <span class="math inline">\(\alpha\)</span></a></li>
+<li class="chapter" data-level="7.1.2" data-path="finance.html"><a href="finance.html#sect:hill-c"><i class="fa fa-check"></i><b>7.1.2</b> Estimation of <span class="math inline">\(c\)</span></a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="finance.html"><a href="finance.html#modelling-dependence"><i class="fa fa-check"></i><b>7.2</b> Modelling dependence</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="finance.html"><a href="finance.html#correlation"><i class="fa fa-check"></i><b>7.2.1</b> Correlation</a></li>
+<li class="chapter" data-level="7.2.2" data-path="finance.html"><a href="finance.html#alternative-dependence-measures"><i class="fa fa-check"></i><b>7.2.2</b> Alternative dependence measures</a></li>
+<li class="chapter" data-level="7.2.3" data-path="finance.html"><a href="finance.html#the-coefficient-of-tail-dependence"><i class="fa fa-check"></i><b>7.2.3</b> The coefficient of tail dependence</a></li>
+<li class="chapter" data-level="7.2.4" data-path="finance.html"><a href="finance.html#example-dependence-in-negative-returns"><i class="fa fa-check"></i><b>7.2.4</b> Example: dependence in negative returns</a></li>
+<li class="chapter" data-level="7.2.5" data-path="finance.html"><a href="finance.html#the-extremal-index-and-the-coefficient-of-tail-dependence"><i class="fa fa-check"></i><b>7.2.5</b> The extremal index and the coefficient of tail dependence</a></li>
+<li class="chapter" data-level="7.2.6" data-path="finance.html"><a href="finance.html#multivariate-extremes-and-further-reading"><i class="fa fa-check"></i><b>7.2.6</b> Multivariate extremes and further reading</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="finance.html"><a href="finance.html#value-at-risk-expected-shortfall-volatility"><i class="fa fa-check"></i><b>7.3</b> Value at Risk, Expected Shortfall, &amp; Volatility</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="finance.html"><a href="finance.html#fitting-gev"><i class="fa fa-check"></i><b>7.3.1</b> Fitting GEV</a></li>
+<li class="chapter" data-level="7.3.2" data-path="finance.html"><a href="finance.html#fitting-gpd-undoing-the-conditioning"><i class="fa fa-check"></i><b>7.3.2</b> Fitting GPD &amp; undoing the conditioning</a></li>
+<li class="chapter" data-level="7.3.3" data-path="finance.html"><a href="finance.html#expected-shortfall"><i class="fa fa-check"></i><b>7.3.3</b> Expected Shortfall</a></li>
+<li class="chapter" data-level="7.3.4" data-path="finance.html"><a href="finance.html#adjustment-to-var-for-dependent-data"><i class="fa fa-check"></i><b>7.3.4</b> Adjustment to VaR for dependent data</a></li>
+<li class="chapter" data-level="7.3.5" data-path="finance.html"><a href="finance.html#volatility"><i class="fa fa-check"></i><b>7.3.5</b> Volatility</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="finance.html"><a href="finance.html#volatility-models"><i class="fa fa-check"></i><b>7.4</b> Volatility models</a></li>
+<li class="chapter" data-level="7.5" data-path="finance.html"><a href="finance.html#further-reading"><i class="fa fa-check"></i><b>7.5</b> Further reading</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="further.html"><a href="further.html"><i class="fa fa-check"></i><b>8</b> Further Reading</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="further.html"><a href="further.html#general-books"><i class="fa fa-check"></i><b>8.1</b> General &amp; books</a></li>
+<li class="chapter" data-level="8.2" data-path="further.html"><a href="further.html#environmental-applications"><i class="fa fa-check"></i><b>8.2</b> Environmental applications</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendices.html"><a href="appendices.html"><i class="fa fa-check"></i>Appendices</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendices.html"><a href="appendices.html#formula-sheet"><i class="fa fa-check"></i>Formula sheet</a></li>
+<li class="chapter" data-level="" data-path="appendices.html"><a href="appendices.html#asymptotic-notation"><i class="fa fa-check"></i>Asymptotic notation</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i>Bibliography</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Lancaster University MATH562/482/582</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="finance" class="section level1" number="7">
+<h1><span class="header-section-number">7</span> Extremes in Finance</h1>
+<p>In this chapter, we look at methods in extreme value theory that are suitable for applications to financial data. However, it should not be mistaken that they are not applicable to other kinds of data e.g. environment data.</p>
+<div id="the-hill-estimator-for-heavy-tailed-data" class="section level2" number="7.1">
+<h2><span class="header-section-number">7.1</span> The Hill estimator for heavy-tailed data</h2>
+<p>Financial data almost always have heavy tails <span class="math inline">\((\xi&gt;0)\)</span>. Sometimes a simpler model is assumed for the survivor function, which is a good approximation to the GPD for large values. We assume
+<span class="math display" id="eq:hill">\[\begin{eqnarray}
+ \Pr(X&gt;x) \approx \frac{c}{x^{\alpha}},~~~c&gt;0, \alpha&gt;0, x&gt;u, \tag{7.1}
+\end{eqnarray}\]</span>
+for <span class="math inline">\(u\)</span> a high threshold. Thus we have
+<span class="math display" id="eq:PRXu">\[\begin{eqnarray}
+ \Pr(X&gt;x|X&gt;u) \approx (u/x)^\alpha. \tag{7.2}
+\end{eqnarray}\]</span>
+This model is very similar to the GPD for <span class="math inline">\(\xi&gt;0\)</span> and large <span class="math inline">\(x\)</span>.</p>
+<p>We begin with the GPD expression for <span class="math inline">\(\Pr(X&gt;x|X&gt;u)\)</span>:
+<span class="math display">\[\begin{align*}
+ \left[1+\xi \left(\frac{x-u}{\sigma_u}\right)\right]_+^{-1/\xi} &amp; = \left(\frac{\sigma_u}{\xi}\right)^{1/\xi} x^{-1/\xi} \left[1+\frac{\sigma_u-\xi u}{\xi x}\right]^{-1/\xi}\\
+ &amp; = \left(\frac{\sigma_u}{\xi}\right)^{1/\xi} x^{-1/\xi}[1+O(x^{-1})],~~x\to\infty
+\end{align*}\]</span>
+Now <span class="math inline">\(\sigma_u = \sigma+\xi(u-\mu)\)</span>, so <span class="math inline">\(\sigma_u-\xi u\)</span> does not depend on <span class="math inline">\(u\)</span> and furthermore
+<span class="math display">\[\begin{eqnarray*}
+ \left(\frac{\sigma_u}{\xi}\right)^{1/\xi} = u^{1/\xi}\left(1+\frac{\sigma/\xi-\mu}{u}\right)^{1/\xi} \approx u^{1/\xi}
+\end{eqnarray*}\]</span>
+for large <span class="math inline">\(u\)</span>. Therefore <span class="math inline">\(\Pr(X&gt;x|X&gt;u) \approx (u/x)^{1/\xi}\)</span>, for large <span class="math inline">\(x\)</span> and large <span class="math inline">\(u\)</span>, which is the expression <a href="finance.html#eq:PRXu">(7.2)</a> for <span class="math inline">\(\alpha=1/\xi\)</span>.</p>
+<div id="the-hill-estimator-of-alpha" class="section level3" number="7.1.1">
+<h3><span class="header-section-number">7.1.1</span> The Hill estimator of <span class="math inline">\(\alpha\)</span></h3>
+<p>The advantage of equation <a href="finance.html#eq:hill">(7.1)</a> is it lends itself to a simple, closed form estimator for <span class="math inline">\(\alpha\)</span> (equivalently <span class="math inline">\(\xi\)</span>). Although numerical methods now make maximisation of GPD likelihoods very simple, the Hill estimator is still widely used by many who work with heavy-tailed data. There is more than one way to derive the estimator: we shall stick with a likelihood motivation.</p>
+<p>According to <a href="finance.html#eq:hill">(7.1)</a>, the density for an observation, given that it exceeds <span class="math inline">\(u\)</span>, is
+<span class="math display">\[\begin{eqnarray*}
+ f(x|X&gt;u) = \alpha u^{\alpha} x^{-\alpha-1}.
+\end{eqnarray*}\]</span>
+For a total of <span class="math inline">\(n_u\)</span> threshold exceedances, this gives the MLE of <span class="math inline">\(\alpha\)</span> as
+<span class="math display">\[\begin{eqnarray*}
+ \hat{\alpha} = \left[\frac{1}{n_u} \sum_{i=1}^{n_u} (\log x_i - \log u)\right]^{-1}.
+\end{eqnarray*}\]</span>
+Often the threshold <span class="math inline">\(u\)</span> is actually taken to be the <span class="math inline">\(k\)</span>-th order statistic, <span class="math inline">\(X_{(k)}\)</span>. The choice of <span class="math inline">\(k\)</span> is similar to the choice of <span class="math inline">\(u\)</span>, in the sense of the bias-variance trade-off involved.</p>
+</div>
+<div id="sect:hill-c" class="section level3" number="7.1.2">
+<h3><span class="header-section-number">7.1.2</span> Estimation of <span class="math inline">\(c\)</span></h3>
+<p>Estimation of <span class="math inline">\(c\)</span> can be performed by using the empirical proportion of exceedances to estimate the theoretical proportion:
+<span class="math display">\[\begin{eqnarray*}
+ \Pr(X&gt;u) = \frac{c}{u^{\alpha}} =\frac{n_u}{n}
+\end{eqnarray*}\]</span>
+so <span class="math inline">\(\hat{c} = \frac{n_u}{n} u^{\hat{\alpha}}\)</span>. Plugging in the estimated <span class="math inline">\(\hat{\alpha}\)</span>, <span class="math inline">\(\hat{c}\)</span> into equation <a href="finance.html#eq:hill">(7.1)</a> provides a simple estimate of high quantiles.
+<span class="math display">\[\begin{eqnarray*}
+ x_p = \left(\frac{p}{\hat{c}}\right)^{-1/\hat{\alpha}}.
+\end{eqnarray*}\]</span></p>
+</div>
+</div>
+<div id="modelling-dependence" class="section level2" number="7.2">
+<h2><span class="header-section-number">7.2</span> Modelling dependence</h2>
+<p>Suppose we are interested in the risk associated to <span style="color: red;">more than one stock</span>. Tho assess this we need to model the dependence between the stocks <span style="color: red;">at extreme levels</span>.
+<img src="images/bmw_siemens-1.png" width="85%" style="display: block; margin: auto;" />
+The figure shows the <span style="color: red;">negative returns of BMW</span> plotted against the <span style="color: red;">negative returns of Siemens</span> over the same period. There is a positive relationship, and we need to take this into account in calculating the risk of a portfolio containing both of these stocks.</p>
+<div id="correlation" class="section level3" number="7.2.1">
+<h3><span class="header-section-number">7.2.1</span> Correlation</h3>
+<p>The first measure of dependence people usually think of is correlation.
+<span class="math display">\[ \begin{aligned}
+ \mbox{Corr}(X,Y) = \frac{E(XY)-E(X)E(Y)}{\sqrt{\mbox{Var}(X)}\sqrt{\mbox{Var}(Y)}}
+\end{aligned} \]</span>
+This measure:</p>
+<ul>
+<li>Requires existence of first and second moments</li>
+<li>Is not invariant to marginal choice</li>
+<li>Only fully characterises the dependence if <span class="math inline">\((X,Y)\)</span> have a bivariate Gaussian distribution.</li>
+</ul>
+</div>
+<div id="alternative-dependence-measures" class="section level3" number="7.2.2">
+<h3><span class="header-section-number">7.2.2</span> Alternative dependence measures</h3>
+<p>Fitting a bivariate Gaussian distribution to the data with the estimated correlation coefficient is as arbitrary as fitting a Gaussian model to the margins and using the estimated tail for the extremes.</p>
+<p>As in the univariate case, we anticipate that dependence at extreme levels is different to that at “average” levels. We don’t want to contaminate our estimate of extremal dependence with average dependence.</p>
+<div id="motivating-examples" class="section level4" number="7.2.2.1">
+<h4><span class="header-section-number">7.2.2.1</span> Motivating examples</h4>
+<p>Let us assume that our variables have standard Fréchet margins, so <span class="math inline">\(\Pr(X\leq x) = e^{-1/x}\)</span>. As <span class="math inline">\(x\to\infty\)</span>,
+<span class="math display">\[\begin{eqnarray*}
+ \Pr(X&gt;x) = x^{-1}[1+O(x^{-1})].
+\end{eqnarray*}\]</span></p>
+<p><strong>Independence</strong><br />
+If <span class="math inline">\((X,Y)\)</span> are independent then their joint survivor function evaluated on the diagonal can be expressed as
+<span class="math display">\[\begin{eqnarray*}
+ \Pr(X&gt;x,Y&gt;x) = x^{-2}[1+O(x^{-1})]~~x\to\infty.
+\end{eqnarray*}\]</span></p>
+<p><strong>Bivariate extreme value distribution</strong><br />
+If <span class="math inline">\(\Pr(X\leq x, Y\leq y) = \exp\{-V(x,y)\}\)</span> with <span class="math inline">\(V:(0,\infty)^2\to(0,\infty)\)</span> homogeneous of order 1 we say <span class="math inline">\((X,Y)\)</span> have a bivariate extreme value distribution. Then
+<span class="math display">\[\begin{eqnarray*}
+ \Pr(X&gt;x,Y&gt;x) = x^{-1}[2-V(1,1)+O(x^{-1})],~~x\to\infty.
+\end{eqnarray*}\]</span></p>
+<p><strong>Bivariate normal distribution</strong><br />
+If <span class="math inline">\((\Phi^{-1}(\exp\{-1/X\}), \Phi^{-1}(\exp\{-1/Y\})) \sim\)</span> N<span class="math inline">\(_2(\rho)\)</span> then
+<span class="math display">\[\begin{eqnarray*}
+ \Pr(X&gt;x,Y&gt;x) = x^{-2/(1+\rho)}[C_{\rho} (\log(x))^{\rho/(1+\rho)}+o(1)],~~x\to\infty.
+\end{eqnarray*}\]</span></p>
+</div>
+</div>
+<div id="the-coefficient-of-tail-dependence" class="section level3" number="7.2.3">
+<h3><span class="header-section-number">7.2.3</span> The coefficient of tail dependence</h3>
+<p>Let us assume that our variables have standard Fréchet margins (achieved by a transformation). Then a very general assumption is
+<span class="math display" id="eq:cotd">\[\begin{eqnarray}
+ \Pr(X&gt;x, Y&gt;x) = L(x)x^{-1/\eta},~~~x\to \infty,
+ \tag{7.3}
+\end{eqnarray}\]</span>
+where</p>
+<ul>
+<li><span class="math inline">\(L:(0,\infty)\to (0,\infty)\)</span> is termed a slowly varying function<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></li>
+<li><span class="math inline">\(\eta \in(0,1]\)</span> is the coefficient of tail dependence</li>
+</ul>
+<p>Values of <span class="math inline">\(\eta\)</span> close to 0 indicate weak (negative) extremal dependence, <span class="math inline">\(\eta=1/2\)</span> corresponds to near independence, and <span class="math inline">\(\eta\)</span> near 1 corresponds to strong extremal dependence.</p>
+<p>Let us suppose that <span class="math inline">\(L(x) \approx C\)</span>, since slowly varying functions do not change much over a large range of <span class="math inline">\(x\)</span>. We can rewrite equation <a href="finance.html#eq:cotd">(7.3)</a> as
+<span class="math display">\[\begin{eqnarray*}
+  {\Pr(\min(X,Y)&gt;x) \approx Cx^{-1/\eta}}.
+\end{eqnarray*}\]</span>
+Note the similarity with equation <a href="finance.html#eq:hill">(7.1)</a>. We can use the Hill estimator to estimate <span class="math inline">\(\eta\)</span>.</p>
+<p>For an interpretation of <span class="math inline">\(\eta\)</span>, consider the conditional probability
+<span class="math display">\[\begin{eqnarray*}
+ \Pr(X&gt;x | Y&gt;x) \approx Cx^{1-1/\eta}.
+\end{eqnarray*}\]</span>
+If <span class="math inline">\(\eta=1\)</span> this probability is constant irrespective of the value of <span class="math inline">\(x\)</span> (as long as <span class="math inline">\(x\)</span> is large). Otherwise it decreases with <span class="math inline">\(x\)</span>, and this decrease is more rapid more smaller <span class="math inline">\(\eta\)</span>.</p>
+</div>
+<div id="example-dependence-in-negative-returns" class="section level3" number="7.2.4">
+<h3><span class="header-section-number">7.2.4</span> Example: dependence in negative returns</h3>
+<p>The first stage in the estimation is to transform the margins to standard Fréchet. We need the Probability Integral Transform (Section <a href="alternative.html#sect:PIT">3.2.5</a>).</p>
+<p>If <span class="math inline">\(X \sim F\)</span>, then <span class="math inline">\(-1/\log F(X) \sim\)</span> Fréchet. Thus we need an estimate of <span class="math inline">\(F\)</span>. We could either</p>
+<ol style="list-style-type: decimal">
+<li>Use the empirical distribution function (EDF) throughout</li>
+<li>Use the EDF up to a threshold <span class="math inline">\(u\)</span>, and the GPD above the threshold</li>
+</ol>
+<p>Option 1 means setting:
+<span class="math display">\[\begin{eqnarray*}
+\tilde{F}(X_i) = \mbox{rank}(X_i)/(n+1).
+\end{eqnarray*}\]</span>
+For Option 2, above a threshold <span class="math inline">\(u\)</span>, we set
+<span class="math display">\[\begin{eqnarray*}
+\hat{F}(X_i) = 1-\hat{\phi}_u[1+\hat{\xi}(X_i-u)/\hat{\sigma}_u]^{-1/\hat{\xi}}_+.
+\end{eqnarray*}\]</span></p>
+<p><img src="images/bmw_siemens_frechet-1.png" width="85%" style="display: block; margin: auto;" />
+Set <span class="math inline">\(Z_i = \min(X_i,Y_i)\)</span>
+<span class="math display">\[\begin{eqnarray*}
+ \hat{\eta}  = \frac{1}{n_u} \sum_{i=1}^{n_u} (\log z_i - \log u)
+\end{eqnarray*}\]</span>
+For <span class="math inline">\(u\)</span> equal to the 0.95 quantile of the <span class="math inline">\(Z_i\)</span> we have <span class="math inline">\(\hat{\eta} = 0.916\)</span> (standard error 0.055), suggesting fairly strong extremal dependence.</p>
+<p>We can now estimate the level of the loss that is exceeded by both variables with small probability <span class="math inline">\(p\)</span>.
+<span class="math display">\[\begin{eqnarray*}
+ \Pr(\min(X,Y)&gt;z_p) \approx \hat{C} z_p^{-1/\hat{\eta}} = p,
+\end{eqnarray*}\]</span>
+using the estimate of <span class="math inline">\(C\)</span> as in Section <a href="finance.html#sect:hill-c">7.1.2</a>. To translate the estimated <span class="math inline">\(z_p\)</span> back to the returns scale we need to use the inverse of the earlier transformation to the Fréchet scale. This, amongst other reasons, suggests use of Option 2 is preferable for the transformation.</p>
+</div>
+<div id="the-extremal-index-and-the-coefficient-of-tail-dependence" class="section level3" number="7.2.5">
+<h3><span class="header-section-number">7.2.5</span> The extremal index and the coefficient of tail dependence</h3>
+<p>The coefficient of tail dependence <span class="math inline">\(\eta\)</span> describes the dependence in the extreme values of <strong>two random variables</strong>. This is different to what we have seen in Chapter <a href="stationary.html#extremal-index">5.3</a>, where the extremal index <span class="math inline">\(\theta\)</span> describes the short-range temporal/serial dependence in the extreme values of <strong>stationary processes</strong>. Their difference is analogous to that between the Pearson correlation of two variables (Chapter <a href="finance.html#correlation">7.2.1</a>) &amp; the autocorrelation function of a time-series.</p>
+<p>It is possible to investigate both kinds of dependence for the same set of variables. For example, we consider the variables <span class="math inline">\(\{X_t\}\)</span> in a stationary (but dependent) process, where we can calculate the extremal index as usual. We can also compute the coefficient of tail dependence by considering <span class="math inline">\(\{X_t\}\)</span> and <span class="math inline">\(\{X_{t-1}\}\)</span> as the two variables of interest.</p>
+</div>
+<div id="multivariate-extremes-and-further-reading" class="section level3" number="7.2.6">
+<h3><span class="header-section-number">7.2.6</span> Multivariate extremes and further reading</h3>
+<p>The coefficient of tail dependence can be extended to a multivariate setting and computed for all possible pairs of random variables. As multivariate extremes are beyond this module’s scope, we will include some references here. The original proponents of <span class="math inline">\(\eta\)</span> are <span class="citation">Ledford and Tawn (<a href="#ref-lt96" role="doc-biblioref">1996</a>)</span> and <span class="citation">Ledford and Tawn (<a href="#ref-lt98" role="doc-biblioref">1998</a>)</span>, while <span class="citation">Heffernan (<a href="#ref-heffernan00" role="doc-biblioref">2000</a>)</span> provided a comprehensive directory of <span class="math inline">\(\eta\)</span> for different bivariate distributions. Other related works include, in chronological order, <span class="citation">Sibuya (<a href="#ref-sibuya60" role="doc-biblioref">1960</a>)</span>, <span class="citation">Mardia (<a href="#ref-mardia64" role="doc-biblioref">1964</a>)</span>, <span class="citation">Tiago de Oliveira (<a href="#ref-tdo623" role="doc-biblioref">1962/63</a>)</span>, <span class="citation">Pickands (<a href="#ref-pickands81" role="doc-biblioref">1981</a>)</span>, <span class="citation">S. G. Coles and Tawn (<a href="#ref-ct91" role="doc-biblioref">1991</a>)</span>, <span class="citation">Ledford and Tawn (<a href="#ref-lt97" role="doc-biblioref">1997</a>)</span>, and <span class="citation">S. G. Coles, Heffernan, and Tawn (<a href="#ref-cht99" role="doc-biblioref">1999</a>)</span>. A general reference on multivariate models and dependence concepts is <span class="citation">Joe (<a href="#ref-joe97" role="doc-biblioref">1997</a>)</span>. Finally, <span class="citation">Heffernan and Tawn (<a href="#ref-ht04" role="doc-biblioref">2004</a>)</span> proposed a different yet influential <strong>conditional</strong> approach to multivariate extremes.</p>
+</div>
+</div>
+<div id="value-at-risk-expected-shortfall-volatility" class="section level2" number="7.3">
+<h2><span class="header-section-number">7.3</span> Value at Risk, Expected Shortfall, &amp; Volatility</h2>
+<p>You may also have learned about Value at Risk (VaR), which is indeed equivalent to high quantiles and return levels we have seen in Section <a href="block-maxima.html#return-levels">2.3.3</a>. In this section, we will look deeper into VaR &amp; a related quantity called Expected Shortfall (also known as <strong>Conditional</strong> VaR), and the effect of volatility in the calculations of VaR.</p>
+<div id="fitting-gev" class="section level3" number="7.3.1">
+<h3><span class="header-section-number">7.3.1</span> Fitting GEV</h3>
+<p>Often in financial contexts, one is more concerned with the loss in a particular day, rather than the maximum losses over a particular time period (e.g. three months). How can we use the models we have learned to help with this estimation?</p>
+<p>Recall that, for an IID sequence <span class="math inline">\(\{X_t\}\)</span> assumed to come from the distribution <span class="math inline">\(F\)</span>,
+<span class="math display">\[ \Pr(M_n\leq y)=F(y)^n\approx G\left(\frac{y-b_n}{a_n}\right), \]</span>
+where <span class="math inline">\(M_n\)</span> is the block maxima of size <span class="math inline">\(n\)</span> (e.g. maxima of <span class="math inline">\(n\)</span> daily negative returns), and our estimated GEV distribution, <span class="math inline">\(G\left(\frac{y-b_n}{a_n}\right)=\tilde{G}(y)\)</span> is approximately <span class="math inline">\(F(y)^n\)</span>. One way to translate our return levels to quantiles of the original distribution is to solve
+<span class="math display">\[ F(z_p)=\tilde{G}^{1/n}(z_p)=p \]</span>
+giving
+<span class="math display">\[ z_p=\mu-\frac{\sigma}{\xi}\left[1-\left(-n\log p\right)^{-\xi}\right]. \]</span>
+Compare this to Equation <a href="block-maxima.html#eq:return-level">(2.6)</a>. When referring to daily negative returns, this quantity is called the <span class="math inline">\(100p\)</span>% VaR, which is the value that will be exceeded with probability <span class="math inline">\(1-p\)</span>. That is, for a series of negative daily returns, <span class="math inline">\(X_t\)</span>,
+<span class="math display">\[ \Pr(X_t\leq\mbox{VaR}(p))=p \qquad \Leftrightarrow \qquad \Pr(X_t&gt;\mbox{VaR}(p))=1-p. \]</span>
+Note that, the definition of VaR<span class="math inline">\((p)\)</span> varies slightly in the literature, as, for example, the 99% VaR here may be called the 1% VaR elsewhere. Nevertheless, there usually is no ambiguity as investors are most interested in large potential losses.</p>
+<strong>BMW example</strong><br />
+We continue with the daily negative returns seen above, but focus on one of the two stocks, namely BMW.
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:bmw-ts"></span>
+<img src="images/bmw-ts-1.png" alt="Daily negative returns of BMW." width="85%" />
+<p class="caption">
+Figure 7.1: Daily negative returns of BMW.
+</p>
+</div>
+<p>The BMW data were maxima of <span class="math inline">\(n=66\)</span> consecutive negative returns (which is approximately three months of trading days). There were <span class="math inline">\(g=93\)</span> such maxima, so the maxima relate to a total of <span class="math inline">\(T=ng=6138\)</span> daily negative returns.</p>
+<p>The <span class="math inline">\(95\)</span>% VaR (that is, the negative return value that will be exceeded with probability <span class="math inline">\(5\)</span>% on a given day) is
+<span class="math display">\[\begin{eqnarray*}
+ \hat\mu -\frac{\hat\sigma}{\hat\xi}\left[1-\{-66\log(0.95)\}^{-\hat\xi}\right] = 0.0153
+\end{eqnarray*}\]</span></p>
+<p>The <span class="math inline">\(99\)</span>% VaR is
+<span class="math display">\[\begin{eqnarray*}
+\hat\mu -\frac{\hat\sigma}{\hat\xi}\left[1-\{-66\log(0.99)\}^{-\hat\xi}\right] = 0.0333
+\end{eqnarray*}\]</span></p>
+<p>To obtain estimates of uncertainty, we could again use the delta method or profile likelihood.</p>
+</div>
+<div id="fitting-gpd-undoing-the-conditioning" class="section level3" number="7.3.2">
+<h3><span class="header-section-number">7.3.2</span> Fitting GPD &amp; undoing the conditioning</h3>
+<p>Suppose we fit the GPD to a series of negative returns. How do we calculate the VaR? We know
+<span class="math display">\[\begin{eqnarray*}
+ \Pr(X&gt; x | X&gt;u) = \left[1+\xi\left(\frac{x-u}{\sigma_u}\right)\right]^{-1/\xi}_+.
+\end{eqnarray*}\]</span>
+We need to undo the conditioning to calculate the quantile.</p>
+<p>The GPD provides a model for excesses conditional upon being an excess. We undo this conditioning by modelling the number of exceedances, <span class="math inline">\(N_u\)</span>, assuming either</p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(N_u \sim\)</span> Poisson<span class="math inline">\((\gamma_u), ~~~ \gamma_u = E(N_u)\)</span></li>
+<li><span class="math inline">\(N_u \sim\)</span> Binomial<span class="math inline">\((n,\phi_u), ~~~ \phi_u=\Pr(X&gt;u)\)</span></li>
+</ol>
+<p>The first option is equivalent to the Poisson process model of Section <a href="alternative.html#sect:poisson-process-limit">3.1.4</a>, with a different parameterisation. The second is almost equivalent for large sample sizes. The maximum likelihood estimate for <span class="math inline">\({\phi_u}\)</span> is <span class="math inline">\({n_u/n}\)</span>, with <span class="math inline">\({N_u=n_u}\)</span> the observed number of exceedances of <span class="math inline">\(u\)</span>, from a total of <span class="math inline">\(n\)</span> data points. VaR<span class="math inline">\((p)\)</span> can thus be found by solving
+<span class="math display">\[\begin{eqnarray*}
+1-\left[1+\hat\xi\left(\frac{\mbox{VaR}(p)-u}{\hat\sigma_u}\right)\right]^{-1/\hat\xi} \hat\phi_u = p
+\end{eqnarray*}\]</span>
+to give
+<span class="math display">\[\begin{eqnarray*}
+\mbox{VaR}(p) = u +\frac{\hat\sigma_u}{\hat\xi}\left[\left(\frac{\hat\phi_u}{1-p}\right)^{\hat\xi}-1\right].
+\end{eqnarray*}\]</span></p>
+<p><strong>BMW example</strong><br />
+We continue with the BMW example. We choose <span class="math inline">\(u = 0.03\)</span>, which means there are <span class="math inline">\(136\)</span> exceedances (quite comparable to the number of block maxima). Using the parameter estimates, we can calculate the <span class="math inline">\(95\)</span>% VaR:
+<span class="math display">\[\begin{eqnarray*}
+u + \frac{\hat\sigma_u}{\hat\xi}\left[\left(\frac{\hat\phi_u}{1-0.95}\right)^{\hat\xi}-1\right] = 0.0203
+\end{eqnarray*}\]</span>
+The <span class="math inline">\(99\)</span>% VaR is
+<span class="math display">\[\begin{eqnarray*}
+u + \frac{\hat\sigma_u}{\hat\xi}\left[\left(\frac{\hat\phi_u}{1-0.99}\right)^{\hat\xi}-1\right] = 0.0406
+\end{eqnarray*}\]</span>
+We can see the estimated VaRs are similar but slightly larger than those by using the GEV for block maxima.</p>
+</div>
+<div id="expected-shortfall" class="section level3" number="7.3.3">
+<h3><span class="header-section-number">7.3.3</span> Expected Shortfall</h3>
+<p>Expected Shortfall, <span class="math inline">\({\mbox{ES}(p)}\)</span>, also known as <strong>conditional</strong> VaR, is the name given to the expected negative return, given that the VaR threshold has been exceeded. If <span class="math inline">\({X}\)</span> denotes a negative return then
+<span class="math display">\[\begin{eqnarray*}
+ \mbox{ES}(p) = E[X|X&gt;\mbox{VaR}(p)].
+\end{eqnarray*}\]</span>
+Assuming <span class="math inline">\(\mbox{VaR}(p)\)</span> to be a high threshold, and we have fitted a GPD above a threshold <span class="math inline">\({u&lt;\mbox{VaR}(p)}\)</span>, this is calculated using the expression in Section <a href="alternative.html#sect:GPDproperties">3.2.2</a>.
+<span class="math display">\[\begin{align*}
+\mbox{ES}(p) &amp;= \mbox{VaR}(p) + \frac{\sigma_v}{1-\xi},\qquad\qquad\qquad(\mbox{where}~v=\mbox{VaR}(p))\\
+&amp;= \mbox{VaR}(p) + \frac{\sigma_u + \xi(\mbox{VaR}(p) - u)}{1-\xi}.
+\end{align*}\]</span></p>
+</div>
+<div id="adjustment-to-var-for-dependent-data" class="section level3" number="7.3.4">
+<h3><span class="header-section-number">7.3.4</span> Adjustment to VaR for dependent data</h3>
+<p>Thus far we have ignored dependence in our VaR calculations. We have seen two methods for calculating VaR:</p>
+<ol style="list-style-type: decimal">
+<li>Fitting the GEV to “subperiod maxima” (e.g. three-monthly maxima) and solving <span class="math inline">\(\tilde{G}^{1/n}(z_p) \approx F(z_p) = p\)</span></li>
+<li>Fitting the GPD to all exceedances and solving <span class="math inline">\(P(X&gt;z_p|X&gt;u)\phi_u \approx 1-F(z_p) = 1-p\)</span></li>
+</ol>
+<p>with <span class="math inline">\(z_p = \mbox{VaR}(p)\)</span>.</p>
+<p>How do we calculate the VaR when it is evident that there is serial dependence in the data?</p>
+<p><strong>Adjusting for subperiod maxima</strong><br />
+As seen in Section <a href="stationary.html#sect:shortRangeImplications">5.3.2</a> our estimated GEV for a stationary process is <span class="math inline">\(\tilde{H}(x)\approx F(x)^{n\theta}\)</span>. Thus we need to solve <span class="math inline">\({\tilde{H}^{1/(n\theta)}(z_p) = p}\)</span>:
+<span class="math display">\[\begin{eqnarray*}
+ \hat{z_p}=\hat\mu -\frac{\hat\sigma}{\hat\xi}\left[1-\{-n\theta\log p\}^{-\hat\xi}\right]
+\end{eqnarray*}\]</span>
+with <span class="math inline">\(z_p = \mbox{VaR}(p)\)</span>. If <span class="math inline">\(\theta&lt;1\)</span> this estimate is larger than when <span class="math inline">\(\theta=1\)</span>. Ignoring dependence thus means we underestimate the VaR. Note that we will still need all data to estimate the extremal index (via the Runs Method).</p>
+<p><strong>Adjusting for all exceedances</strong><br />
+The original estimate is still valid in this case. However, if we use all exceedances to estimate parameters, then an adjustment to the standard errors would be required (cf. Section <a href="inference-dependent.html#sect:modelClusterMaxima">6.2</a>).</p>
+<p><strong>BMW example</strong><br />
+Going back to previous results, the estimates of the GPD parameters for the entire series taking a threshold of <span class="math inline">\(u=0.03\)</span> are <span class="math inline">\(\hat{\sigma}_u=0.0126~(0.00157)\)</span> and <span class="math inline">\(\hat{\xi} = 0.143~(0.0947)\)</span>. The quoted standard errors are too small as the exceedances are not independent.</p>
+<p>The estimates of the GPD parameters using clustering maxima for clusters defind by the runs method taking <span class="math inline">\(u=0.03\)</span> and <span class="math inline">\(m = 10\)</span> are <span class="math inline">\(\hat{\sigma}_u=0.0126~(0.00189)\)</span> and <span class="math inline">\(\hat{\xi} = 0.179~(0.116)\)</span>. These standard errors are more reliable.</p>
+<p>The <span class="math inline">\(99\)</span>% VaR for the three monthly maxima of these data was estimated as <span class="math inline">\(0.0333\)</span>. However, this estimate didn’t take account of the dependence, measured via the extremal index <span class="math inline">\(\theta\)</span>, estimated in Figure <a href="finance.html#fig:bmw-dep">7.2</a>.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:bmw-dep"></span>
+<img src="images/bmw-dep-1.png" alt="Runs estimate of the extremal index for BMW data." width="85%" />
+<p class="caption">
+Figure 7.2: Runs estimate of the extremal index for BMW data.
+</p>
+</div>
+<p>A threshold of <span class="math inline">\(u=0.03\)</span> and run length <span class="math inline">\(m = 10\)</span> appears to give a stable estimate of <span class="math inline">\(\hat{\theta} \approx 0.593\)</span>. Including this in the VaR<span class="math inline">\((0.99)\)</span> calculation gives
+<span class="math display">\[ \hat\mu -\frac{\hat\sigma}{\hat\xi}\left[1-\{-0.593 \times 66 \log(0.99)\}^{-\hat\xi}\right] =  0.0406 \]</span>
+which is exceeded by a proportion of <span class="math inline">\(0.0103\)</span> of the data, and closer to the estimate according to the GPD approach.</p>
+</div>
+<div id="volatility" class="section level3" number="7.3.5">
+<h3><span class="header-section-number">7.3.5</span> Volatility</h3>
+<p>In Section <a href="inference-dependent.html#sect:extIndexStdSqrRet">6.1.1.1</a>, we saw that whether or not we account for volatility makes a difference to our analysis. Thus far we have calculated VaR as a quantile of the entire series over a long time period, ignoring the local variation, which is however usually present in financial time series (see, for example, Figure <a href="finance.html#fig:bmw-ts">7.1</a>). In practice, we may want to estimate VaR for tomorrow rather than on an arbitrary day.</p>
+<p>One approach to removing volatility is similar to that seen in Section <a href="inference-dependent.html#sect:extIndexStdSqrRet">6.1.1.1</a> . Define the filtered negative returns by
+<span class="math display">\[\begin{eqnarray*}
+ Z_t = \frac{X_t - \tilde{E}(X_t)}{\tilde{SD}(X_t)}
+\end{eqnarray*}\]</span>
+where <span class="math inline">\(\tilde{E}(X_t)\)</span> and <span class="math inline">\(\tilde{SD}(X_t)\)</span> are local estimates of the mean and standard deviation, for example using the sample mean and sample standard deviation of the previous <span class="math inline">\(h\)</span> observations.</p>
+<p>Suppose that we have a series of length <span class="math inline">\(T\)</span>. The VaR for the day <span class="math inline">\(T+1\)</span> can be estimated as
+<span class="math display">\[\begin{eqnarray*}
+ \mbox{VaR}(p)[T+1] = \mbox{VaR}_{Z}(p)\times \tilde{SD}(X_T) + \tilde{E}(X_T)
+\end{eqnarray*}\]</span>
+where <span class="math inline">\({\mbox{VaR}_{Z}(p)}\)</span> is the VaR estimated from the filtered series <span class="math inline">\(Z_t\)</span>.</p>
+<p><strong>BMW example</strong></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:bmw-vol"></span>
+<img src="images/bmw-vol-1.png" alt="Filtered series for BMW data." width="85%" />
+<p class="caption">
+Figure 7.3: Filtered series for BMW data.
+</p>
+</div>
+<p>We will calculate VaR<span class="math inline">\((p)[t]\)</span> for <span class="math inline">\(t\geq h\)</span>, with <span class="math inline">\(h = 20\)</span>. First we obtain the filtered series, which is shown in Figure <a href="finance.html#fig:bmw-vol">7.3</a>.</p>
+<p>Following the usual procedure the <span class="math inline">\(\text{VaR}(0.99)\)</span> is estimated as <span class="math inline">\(3.06\)</span>. Transforming to the return series gives the following plot of daily <span class="math inline">\(99\)</span>% VaR estimates</p>
+<p><img src="images/bmw-vart-1.png" width="85%" style="display: block; margin: auto;" />
+The proportion of data exceeding <span class="math inline">\(\text{VaR}(0.99)[t]\)</span> is (interestingly) <span class="math inline">\(0.0105\)</span>, while the proportion of data exceeding <span class="math inline">\(\text{VaR}(0.99)\)</span> is <span class="math inline">\(0.0103\)</span>. Both are correct in the long run.</p>
+</div>
+</div>
+<div id="volatility-models" class="section level2" number="7.4">
+<h2><span class="header-section-number">7.4</span> Volatility models</h2>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:ftse-again"></span>
+<img src="images/ftse-again-1.png" alt="Returns of the FTSE index." width="85%" />
+<p class="caption">
+Figure 7.4: Returns of the FTSE index.
+</p>
+</div>
+<p>You may have learned about (G)ARCH and other models that account for the volatility directly. Here, we will be using the GARCH<span class="math inline">\((1,1)\)</span> model as an example for the FTSE return series in Figure <a href="finance.html#fig:ftse-again">7.4</a>, denoted by <span class="math inline">\(\{X_t\}\)</span>. The model equations are
+<span class="math display">\[\begin{align*}
+  X_t &amp;= \sigma_t\epsilon_t, \\
+  \sigma_t^2 &amp;= \omega + \alpha X_{t-1}^2 + \beta \sigma_{t-1}^2,
+\end{align*}\]</span>
+where <span class="math inline">\(\omega&gt;0,\alpha\geq0,\beta\geq0\)</span>, and the innovation series <span class="math inline">\(\{\epsilon_t\}\)</span> are IID with expectation 0 and variance 1. It is also usually assumed that the innovations are normally distributed.</p>
+<p>We examine if the normality assumption is reasonable after fitting to the FTSE data. From the Q-Q plot of the residuals, which are proxies of the innovation sequence, we can safely say they are not normally distributed.</p>
+<p><img src="images/ftse_garch-1.png" width="85%" style="display: block; margin: auto;" /></p>
+<p>We can also fit the GPD to high quantiles to the residuals and the negative residuals to examine the behaviour on both tails. According to the parameter stability plots, it could be argued that the residuals (top) have a shape parameter of 0 i.e. the Gumbel distribution, whose DoA contains the normal distribution. On the other hand, it is quite clear that the negative residuals (bottom) have a heavier tail than what would be according to the normal distribution.</p>
+<p><img src="images/ftse_par_stability-1.png" width="85%" style="display: block; margin: auto;" /><img src="images/ftse_par_stability-2.png" width="85%" style="display: block; margin: auto;" /></p>
+<p>Ideally, the asymmetry and heaviness of the tails should be incorporated into the GARCH model. As such a unifying model is beyond the scope of this module, we will simply list out a few practical difficulties:</p>
+<ol style="list-style-type: decimal">
+<li>Not even the Student’s <span class="math inline">\(t\)</span>-distribution can circumvent the issue with the violation of the normality assumption, because the data are asymmetric in the tails, while the distribution itself is symmetric;</li>
+<li>Inherently, it is inconsistent to fit the GARCH model assuming normality first, followed by fitting non-normal distribution(s);</li>
+<li>If we are to fit the GARCH model while assuming the appropriate innovation distribution, we will need a distribution that encompasses not only the two tails but also the body;</li>
+<li>The two constraints of zero mean &amp; unit variance for the innovations are still required.</li>
+</ol>
+<p>See <span class="citation">So and Chan (<a href="#ref-sc14" role="doc-biblioref">2014</a>)</span> for an example of incorporating extreme value methods in GARCH models.</p>
+</div>
+<div id="further-reading" class="section level2" number="7.5">
+<h2><span class="header-section-number">7.5</span> Further reading</h2>
+<p>What is described in the section above is from a methodological point of view. For more theoretical results on the extremes of volatility models, please see <span class="citation">de Haan et al. (<a href="#ref-drrd89" role="doc-biblioref">1989</a>)</span>, <span class="citation">Breidt and Davis (<a href="#ref-bd98" role="doc-biblioref">1998</a>)</span>, <span class="citation">Mikosch and Stărică (<a href="#ref-ms00" role="doc-biblioref">2000</a>)</span>, and <span class="citation">Laurini and Tawn (<a href="#ref-lt12" role="doc-biblioref">2012</a>)</span>. For some more examples of financial applications, see <span class="citation">Figueiredo, Gomes, and Henriques-Rodrigues (<a href="#ref-fgh17" role="doc-biblioref">2017</a>)</span> and <span class="citation">Castro-Camilo, de Carvalho, and Wadsworth (<a href="#ref-cdw18" role="doc-biblioref">2018</a>)</span>.</p>
+
+</div>
+</div>
+<h3>Bibliography</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-bd98" class="csl-entry">
+Breidt, J. F., and R. A. Davis. 1998. <span>“Extremes of Stochastic Volatility Models.”</span> <em>Annals of Applied Probability</em> 8: 664–75.
+</div>
+<div id="ref-cdw18" class="csl-entry">
+Castro-Camilo, Daniela, Miguel de Carvalho, and Jennifer Wadsworth. 2018. <span>“Time-Varying Extreme Value Dependence with Application to Leading European Stock Markets.”</span> <em>Annals of Applied Statistics</em> 12 (1): 283–309. <a href="https://doi.org/10.1214/17-AOAS1089">https://doi.org/10.1214/17-AOAS1089</a>.
+</div>
+<div id="ref-cht99" class="csl-entry">
+Coles, S. G., J. E. Heffernan, and J. A. Tawn. 1999. <span>“Dependence Measures for Extreme Value Analyses.”</span> <em>Extremes</em> 2: 339–65.
+</div>
+<div id="ref-ct91" class="csl-entry">
+———. 1991. <span>“Modelling Extreme Multivariate Events.”</span> <em>Journal of the Royal Statistical Society B</em> 53: 377–92.
+</div>
+<div id="ref-drrd89" class="csl-entry">
+de Haan, L., S. I. Resnick, H. Rootzén, and C. G. de Vries. 1989. <span>“Extremal Behaviour of Solutions to a Stochastic Difference Equation with Applications to <span>ARCH</span> Processes.”</span> <em>Stochastic Processes and Their Applications</em> 32: 213–24.
+</div>
+<div id="ref-fgh17" class="csl-entry">
+Figueiredo, Fernanda, M. Ivette Gomes, and Lígia Henriques-Rodrigues. 2017. <span>“Value-at-<span>R</span>isk Estimation and the <span>PORT</span> Mean-of-Order-p Methodology.”</span> <em>REVSTAT – Statistical Journal</em> 15 (2): 187–204. <a href="https://ine.pt/revstat/pdf/rs170202.pdf">https://ine.pt/revstat/pdf/rs170202.pdf</a>.
+</div>
+<div id="ref-heffernan00" class="csl-entry">
+Heffernan, J. E. 2000. <span>“A Directory of Coefficients of Tail Dependence.”</span> <em>Extremes</em> 3: 279–90.
+</div>
+<div id="ref-ht04" class="csl-entry">
+———. 2004. <span>“A Conditional Approach for Multivariate Extreme Values (with Discussion).”</span> <em>Journal of the Royal Statistical Society B</em> 66 (3): 497–546.
+</div>
+<div id="ref-joe97" class="csl-entry">
+Joe, H. 1997. <em>Multivariate Models and Dependence Concepts</em>. London: Chapman; Hall.
+</div>
+<div id="ref-lt12" class="csl-entry">
+Laurini, F., and J. A. Tawn. 2012. <span>“The Extremal Index for the <span>GARCH</span><span class="math inline">\((1,1)\)</span> Process.”</span> <em>Extremes</em> 15: 511–29. <a href="https://doi.org/10.1007/s10687-012-0148-z">https://doi.org/10.1007/s10687-012-0148-z</a>.
+</div>
+<div id="ref-lt96" class="csl-entry">
+Ledford, A. W., and J. A. Tawn. 1996. <span>“Statistics for Near Independence in Multivariate Extreme Values.”</span> <em>Biometrika</em> 83: 169–87.
+</div>
+<div id="ref-lt97" class="csl-entry">
+———. 1997. <span>“Modelling Dependence Within Joint Tail Regions.”</span> <em>Journal of the Royal Statistical Society B</em> 59: 475–99.
+</div>
+<div id="ref-lt98" class="csl-entry">
+———. 1998. <span>“Concomitant Tail Behaviour for Extremes.”</span> <em>Advances in Applied Probability</em> 30: 197–215.
+</div>
+<div id="ref-mardia64" class="csl-entry">
+Mardia, K. V. 1964. <span>“Asymptotic Independence of Bivariate Extremes.”</span> <em>Calcutta Statistical Association Bulletin</em> 13: 172–78.
+</div>
+<div id="ref-ms00" class="csl-entry">
+Mikosch, T., and C. Stărică. 2000. <span>“Limit Theory for the Sample Autocorrelations and Extremes of a <span>GARCH</span><span class="math inline">\((1,1)\)</span> Process.”</span> <em>Annals of Statistics</em> 28: 1427–51.
+</div>
+<div id="ref-pickands81" class="csl-entry">
+———. 1981. <span>“Multivariate Extreme Value Distributions.”</span> In <em>Proceedings 43th, Session of International Statistical Institution</em>, 859–78.
+</div>
+<div id="ref-sibuya60" class="csl-entry">
+Sibuya, M. 1960. <span>“Bivariate Extreme Statistics.”</span> <em>Annals of the Institute of Statistical Mathematics</em> 11: 195–210.
+</div>
+<div id="ref-sc14" class="csl-entry">
+So, M. K. P., and R. K. S. Chan. 2014. <span>“Bayesian Analysis of Tail Asymmetry Based on a Threshold Extreme Value Model.”</span> <em>Computational Statistics and Data Analysis</em> 71: 568–87.
+</div>
+<div id="ref-tdo623" class="csl-entry">
+Tiago de Oliveira, J. 1962/63. <span>“Structure Theory of Bivariate Extremes; Extensions.”</span> <em>Est. Mat., Estat. E. Econ.</em> 7 (1962/63): 165–95.
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="3">
+<li id="fn3"><p>A slowly varying function satisfies <span class="math inline">\(\lim_{t\to\infty}L(tx)/L(t) = 1\)</span>, for any <span class="math inline">\(x&gt;0\)</span>. Simple examples are <span class="math inline">\(L(x) = \log x\)</span>, and <span class="math inline">\(L(x) = C&gt;0\)</span>, a positive constant.<a href="finance.html#fnref3" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="inference-dependent.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="further.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "lunr",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
